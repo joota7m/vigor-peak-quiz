@@ -762,7 +762,7 @@
             var vturbWatcher = setInterval(function() {
                 if (window.smartplayer && window.smartplayer.instances && window.smartplayer.instances.length > 0) {
                     var player = window.smartplayer.instances[0].video;
-                    // Libera botões após 320 segundos exatos
+                    // Libera botões após 5 minutos e 20 segundos (320 segundos)
                     if (player && player.currentTime >= 320) {
                         isVslLocked = false;
                         document.querySelectorAll('.locked-btn, .locked-item').forEach(function(el) {
